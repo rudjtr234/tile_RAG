@@ -46,4 +46,4 @@ python embed_clip.py
 
 # 질의 기반 유사 타일 검색 및 응답
 cd ../inference/
-python inference.py --query "이 환자의 주요 병리 특징은 무엇인가요?"
+python inference.py  # 지정된 디렉토리 별 답변 추론.
