@@ -10,13 +10,13 @@ from chromadb import PersistentClient
 # ✅ 디바이스 설정
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-# ✅ 모델 로딩
-model = CLIPModel.from_pretrained("openai/clip-vit-base-patch16").to(device)
-processor = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch16")
+# ✅ 모델 로딩 (PLIP)
+model = CLIPModel.from_pretrained("vinid/plip").to(device)
+processor = CLIPProcessor.from_pretrained("vinid/plip")
 
 # ✅ ChromaDB 설정
-chroma_client = PersistentClient(path="/home/mts/ssd_16tb/member/jks/tile_RAG_data/vectorDB/tile_RAG_embedding_db_v0.2.0")
-collection = chroma_client.get_or_create_collection(name="tile_embeddings")
+chroma_client = PersistentClient(path="/home/mts/ssd_16tb/member/jks/tile_RAG_data/vectorDB/tile_RAG_embedding_db_v0.2.1")
+collection = chroma_client.get_or_create_collection(name="tile_embeddings_plip")
 
 # ✅ Groundtruth JSON 불러오기
 with open("/home/mts/ssd_16tb/member/jks/reg2025_tile_RAG/embed/ground_truth_all.json", "r") as f:

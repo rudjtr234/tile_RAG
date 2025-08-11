@@ -1,6 +1,6 @@
 import os
 import json
-from transformers import CLIPProcessor, CLIPModel
+from medclip import MedCLIPModel, MedCLIPVisionModelViT, MedCLIPProcessor
 from PIL import Image
 import torch
 import numpy as np
@@ -10,12 +10,16 @@ from chromadb import PersistentClient
 # ✅ 디바이스 설정
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-# ✅ 모델 로딩
-model = CLIPModel.from_pretrained("openai/clip-vit-base-patch16").to(device)
-processor = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch16")
+# ✅ MedCLIP 모델 로딩
+model = MedCLIPModel(vision_cls=MedCLIPVisionModelViT)
+model.from_pretrained()
+model.to(device)
+model.eval()
+
+processor = MedCLIPProcessor()
 
 # ✅ ChromaDB 설정
-chroma_client = PersistentClient(path="/home/mts/ssd_16tb/member/jks/tile_RAG_data/vectorDB/tile_RAG_embedding_db_v0.2.0")
+chroma_client = PersistentClient(path="/home/mts/ssd_16tb/member/jks/tile_RAG_data/vectorDB/ ")
 collection = chroma_client.get_or_create_collection(name="tile_embeddings")
 
 # ✅ Groundtruth JSON 불러오기
@@ -28,17 +32,18 @@ slide_to_caption = {
 }
 
 # ✅ 공통된 슬라이드 ID만 추출
-root_dir = "/home/mts/ssd_16tb/member/jks/tile_RAG_data/train_set_v0.1.0"
+root_dir = "/home/mts/ssd_16tb/member/jks/tile_RAG_data/train_set"
 gt_slide_ids = set(slide_to_caption.keys())
 tile_slide_ids = set([d for d in os.listdir(root_dir) if os.path.isdir(os.path.join(root_dir, d))])
 matched_ids = sorted(list(gt_slide_ids & tile_slide_ids))
 
-# ✅ 임베딩 함수
+# ✅ 임베딩 함수 (MedCLIP)
 def get_embedding(img_path):
     image = Image.open(img_path).convert("RGB")
     inputs = processor(images=image, return_tensors="pt").to(device)
     with torch.no_grad():
-        emb = model.get_image_features(**inputs)
+        outputs = model(**inputs)
+        emb = outputs["img_embeds"]
         emb = emb / emb.norm(dim=-1, keepdim=True)
     return emb.squeeze().cpu().numpy()
 
@@ -74,9 +79,8 @@ if __name__ == "__main__":
         slide_dir = os.path.join(root_dir, slide_id)
 
         try:
-            # 🔥 기존 slide_id에 해당하는 데이터 삭제 후 재삽입
             collection.delete(where={"slide_id": slide_id})
             embed_and_store(slide_dir, slide_id, slide_to_caption[slide_id])
-            print(f"✅ 저장 완료: {slide_id}")
+            print(f"✅ 저장 완료 (MedCLIP): {slide_id}")
         except Exception as e:
             print(f"❌ 오류 발생: {slide_id} → {e}")

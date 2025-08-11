@@ -1,0 +1,402 @@
+[
+  {
+    "id": "PIT_01_00132_01.tiff",
+    "report": "Breast, core-needle biopsy;\n  Invasive carcinoma of no special type, grade II (Tubule formation: 3, Nuclear grade: 3, Mitoses: 1)"
+  },
+  {
+    "id": "PIT_01_00162_01.tiff",
+    "report": "Breast, sono-guided core biopsy;\n  Invasive carcinoma of no special type, grade II (Tubule formation: 3, Nuclear grade: 2, Mitoses: 1)"
+  },
+  {
+    "id": "PIT_01_00194_01.tiff",
+    "report": "Breast, biopsy;\n  Ductal carcinoma in situ\n  - Type: Cribriform\n  - Nuclear grade: High\n  - Necrosis: Present (Comedo-type) "
+  },
+  {
+    "id": "PIT_01_00298_01.tiff",
+    "report": "Breast, core-needle biopsy;\n  No evidence of tumor"
+  },
+  {
+    "id": "PIT_01_00417_01.tiff",
+    "report": "Breast, core-needle biopsy;\n  Invasive carcinoma of no special type, grade II (Tubule formation: 3, Nuclear grade: 2, Mitoses: 1)"
+  },
+  {
+    "id": "PIT_01_00440_01.tiff",
+    "report": "Breast, sono-guided core biopsy;\n  Invasive carcinoma of no special type, grade II (Tubule formation: 3, Nuclear grade: 2, Mitoses: 1)"
+  },
+  {
+    "id": "PIT_01_00463_01.tiff",
+    "report": "Breast, sono-guided core biopsy;\n  Invasive carcinoma of no special type, grade II (Tubule formation: 3, Nuclear grade: 2, Mitoses: 1)"
+  },
+  {
+    "id": "PIT_01_00560_01.tiff",
+    "report": "Breast, sono-guided core biopsy;\n  Invasive carcinoma of no special type, grade II (Tubule formation: 3, Nuclear grade: 2, Mitoses: 1)"
+  },
+  {
+    "id": "PIT_01_01041_01.tiff",
+    "report": "Breast, sono-guided core biopsy;\n  Invasive carcinoma of no special type, grade II (Tubule formation: 3, Nuclear grade: 2, Mitoses: 1)"
+  },
+  {
+    "id": "PIT_01_01064_01.tiff",
+    "report": "Breast, core-needle biopsy;\n  1. Invasive carcinoma of no special type, grade I (Tubule formation: 2, Nuclear grade: 2, Mitoses: 1)\n  2. Ductal carcinoma in situ\n  3. Microcalcification"
+  },
+  {
+    "id": "PIT_01_01315_01.tiff",
+    "report": "Breast, sono-guided core biopsy;\n  Invasive carcinoma of no special type, grade II (Tubule formation: 3, Nuclear grade: 2, Mitoses: 1)"
+  },
+  {
+    "id": "PIT_01_01334_01.tiff",
+    "report": "Breast, sono-guided core biopsy;\n  Invasive carcinoma of no special type, grade II (Tubule formation: 3, Nuclear grade: 2, Mitoses: 1)"
+  },
+  {
+    "id": "PIT_01_01405_01.tiff",
+    "report": "Breast, sono-guided core biopsy;\n  Invasive carcinoma of no special type, grade II (Tubule formation: 3, Nuclear grade: 2, Mitoses: 1)"
+  },
+  {
+    "id": "PIT_01_01582_01.tiff",
+    "report": "Breast, core-needle biopsy;\n  Fibrocystic change"
+  },
+  {
+    "id": "PIT_01_01825_01.tiff",
+    "report": "Breast, mammotome biopsy;\n  Intraductal papilloma"
+  },
+  {
+    "id": "PIT_01_02059_01.tiff",
+    "report": "Breast, sono-guided core biopsy;\n  Papillary neoplasm"
+  },
+  {
+    "id": "PIT_01_02599_01.tiff",
+    "report": "Breast, core-needle biopsy;\n  Invasive carcinoma of no special type, grade II (Tubule formation: 3, Nuclear grade: 2, Mitoses: 1)"
+  },
+  {
+    "id": "PIT_01_02736_01.tiff",
+    "report": "Breast, sono-guided core biopsy;\n  Invasive carcinoma of no special type, grade II (Tubule formation: 3, Nuclear grade: 2, Mitoses: 1)"
+  },
+  {
+    "id": "PIT_01_02839_01.tiff",
+    "report": "Breast, sono-guided core biopsy;\n  Invasive carcinoma of no special type, grade II (Tubule formation: 3, Nuclear grade: 2, Mitoses: 1)"
+  },
+  {
+    "id": "PIT_01_02925_01.tiff",
+    "report": "Breast, mammotome biopsy;\n  Intraductal papilloma"
+  },
+  {
+    "id": "PIT_01_03066_01.tiff",
+    "report": "Uterine cervix, colposcopic biopsy;\n  Low-grade squamous intraepithelial lesion (LSIL; CIN 1)"
+  },
+  {
+    "id": "PIT_01_03092_01.tiff",
+    "report": "Uterine cervix, colposcopic biopsy;\n  Low-grade squamous intraepithelial lesion (LSIL; CIN 1)"
+  },
+  {
+    "id": "PIT_01_03097_01.tiff",
+    "report": "Uterine cervix, colposcopic biopsy;\n  Low-grade squamous intraepithelial lesion (LSIL; CIN 1)"
+  },
+  {
+    "id": "PIT_01_03169_01.tiff",
+    "report": "Uterine cervix, colposcopic biopsy;\n  Low-grade squamous intraepithelial lesion (LSIL; CIN 1)"
+  },
+  {
+    "id": "PIT_01_03186_01.tiff",
+    "report": "Uterine cervix, colposcopic biopsy;\n  Low-grade squamous intraepithelial lesion (LSIL; CIN 1)"
+  },
+  {
+    "id": "PIT_01_03200_01.tiff",
+    "report": "Uterine cervix, colposcopic biopsy;\n  Low-grade squamous intraepithelial lesion (LSIL; CIN 1)"
+  },
+  {
+    "id": "PIT_01_03206_01.tiff",
+    "report": "Uterine cervix, colposcopic biopsy;\n  Low-grade squamous intraepithelial lesion (LSIL; CIN 1)"
+  },
+  {
+    "id": "PIT_01_03246_01.tiff",
+    "report": "Uterine cervix, colposcopic biopsy;\n  Invasive squamous cell carcinoma"
+  },
+  {
+    "id": "PIT_01_03289_01.tiff",
+    "report": "Uterine cervix, colposcopic biopsy;\n  Invasive squamous cell carcinoma"
+  },
+  {
+    "id": "PIT_01_03331_01.tiff",
+    "report": "Uterine cervix, colposcopic biopsy;\n  Low-grade squamous intraepithelial lesion (LSIL; CIN 1)"
+  },
+  {
+    "id": "PIT_01_03435_01.tiff",
+    "report": "Uterine cervix, colposcopic biopsy;\n  Low-grade squamous intraepithelial lesion (LSIL; CIN 1)"
+  },
+  {
+    "id": "PIT_01_03441_01.tiff",
+    "report": "Uterine cervix, colposcopic biopsy;\n  Low-grade squamous intraepithelial lesion (LSIL; CIN 1)"
+  },
+  {
+    "id": "PIT_01_03571_01.tiff",
+    "report": "Uterine cervix, colposcopic biopsy;\n  Low-grade squamous intraepithelial lesion (LSIL; CIN 1)"
+  },
+  {
+    "id": "PIT_01_03616_01.tiff",
+    "report": "Uterine cervix, colposcopic biopsy;\n  Low-grade squamous intraepithelial lesion (LSIL; CIN 1)"
+  },
+  {
+    "id": "PIT_01_03630_01.tiff",
+    "report": "Uterine cervix, colposcopic biopsy;\n  Low-grade squamous intraepithelial lesion (LSIL; CIN 1)"
+  },
+  {
+    "id": "PIT_01_03693_01.tiff",
+    "report": "Uterine cervix, colposcopic biopsy;\n  Low-grade squamous intraepithelial lesion (LSIL; CIN 1)"
+  },
+  {
+    "id": "PIT_01_03710_01.tiff",
+    "report": "Uterine cervix, colposcopic biopsy;\n  Low-grade squamous intraepithelial lesion (LSIL; CIN 1)"
+  },
+  {
+    "id": "PIT_01_04009_01.tiff",
+    "report": "Colon, colonoscopic biopsy;\n  Adenocarcinoma, moderately differentiated"
+  },
+  {
+    "id": "PIT_01_04013_01.tiff",
+    "report": "Colon, colonoscopic biopsy;\n  Adenocarcinoma, moderately differentiated"
+  },
+  {
+    "id": "PIT_01_04409_01.tiff",
+    "report": "Colon, colonoscopic biopsy;\n  Adenocarcinoma, moderately differentiated"
+  },
+  {
+    "id": "PIT_01_04502_01.tiff",
+    "report": "Colon, colonoscopic biopsy;\n  Adenocarcinoma, moderately differentiated"
+  },
+  {
+    "id": "PIT_01_04534_01.tiff",
+    "report": "Colon, colonoscopic biopsy;\n  Adenocarcinoma, moderately differentiated"
+  },
+  {
+    "id": "PIT_01_04604_01.tiff",
+    "report": "Colon, colonoscopic biopsy;\n  Adenocarcinoma, moderately differentiated"
+  },
+  {
+    "id": "PIT_01_04655_01.tiff",
+    "report": "Colon, colonoscopic biopsy;\n  Adenocarcinoma, moderately differentiated"
+  },
+  {
+    "id": "PIT_01_04691_01.tiff",
+    "report": "Colon, colonoscopic biopsy;\n  Adenocarcinoma, moderately differentiated"
+  },
+  {
+    "id": "PIT_01_04733_01.tiff",
+    "report": "Colon, colonoscopic biopsy;\n  Adenocarcinoma, moderately differentiated"
+  },
+  {
+    "id": "PIT_01_04876_01.tiff",
+    "report": "Lung, biopsy;\n  Adenocarcinoma "
+  },
+  {
+    "id": "PIT_01_04877_01.tiff",
+    "report": "Lung, biopsy;\n  Adenocarcinoma "
+  },
+  {
+    "id": "PIT_01_04925_01.tiff",
+    "report": "Lung, biopsy;\n  Adenocarcinoma "
+  },
+  {
+    "id": "PIT_01_05016_01.tiff",
+    "report": "Stomach, endoscopic biopsy;\n  Adenocarcinoma, moderately differentiated "
+  },
+  {
+    "id": "PIT_01_05201_01.tiff",
+    "report": "Urinary bladder, transurethral resection;\n  Invasive urothelial carcinoma,\n  with involvement of subepithelial connective tissue\n       \nNote) The specimen includes muscle proper."
+  },
+  {
+    "id": "PIT_01_05292_01.tiff",
+    "report": "Lung, biopsy;\n  Adenocarcinoma "
+  },
+  {
+    "id": "PIT_01_05350_01.tiff",
+    "report": "Lung, biopsy;\n  Adenocarcinoma "
+  },
+  {
+    "id": "PIT_01_05358_01.tiff",
+    "report": "Lung, biopsy;\n  Adenocarcinoma "
+  },
+  {
+    "id": "PIT_01_05382_01.tiff",
+    "report": "Lung, biopsy;\n  Adenocarcinoma "
+  },
+  {
+    "id": "PIT_01_05385_01.tiff",
+    "report": "Lung, biopsy;\n  Adenocarcinoma "
+  },
+  {
+    "id": "PIT_01_05533_01.tiff",
+    "report": "Lung, biopsy;\n  Adenocarcinoma "
+  },
+  {
+    "id": "PIT_01_05749_01.tiff",
+    "report": "Lung, biopsy;\n  Adenocarcinoma "
+  },
+  {
+    "id": "PIT_01_05959_01.tiff",
+    "report": "Lung, biopsy;\n  Adenocarcinoma "
+  },
+  {
+    "id": "PIT_01_06063_01.tiff",
+    "report": "Prostate, biopsy;\n  No tumor present"
+  },
+  {
+    "id": "PIT_01_06176_01.tiff",
+    "report": "Prostate, biopsy;\n  No tumor present"
+  },
+  {
+    "id": "PIT_01_06696_01.tiff",
+    "report": "Prostate, biopsy;\n  No tumor present"
+  },
+  {
+    "id": "PIT_01_06748_01.tiff",
+    "report": "Prostate, biopsy;\n  No tumor present"
+  },
+  {
+    "id": "PIT_01_06977_01.tiff",
+    "report": "Prostate, biopsy;\n  No tumor present"
+  },
+  {
+    "id": "PIT_01_07015_01.tiff",
+    "report": "Prostate, biopsy;\n  Acinar adenocarcinoma, Gleason's score 6 (3+3), grade group 1, tumor volume: 30%"
+  },
+  {
+    "id": "PIT_01_07090_01.tiff",
+    "report": "Prostate, biopsy;\n  Acinar adenocarcinoma, Gleason's score 8 (4+4), grade group 4, tumor volume: 90%"
+  },
+  {
+    "id": "PIT_01_07129_01.tiff",
+    "report": "Stomach, endoscopic biopsy;\n  Tubular adenoma with low grade dysplasia"
+  },
+  {
+    "id": "PIT_01_07162_01.tiff",
+    "report": "Prostate, biopsy;\n  No tumor present"
+  },
+  {
+    "id": "PIT_01_07182_01.tiff",
+    "report": "Prostate, biopsy;\n  Acinar adenocarcinoma, Gleason's score 7 (4+3), grade group 3 (Gleason pattern 4: 60%), tumor volume: 60%"
+  },
+  {
+    "id": "PIT_01_07423_01.tiff",
+    "report": "Prostate, biopsy;\n  No tumor present"
+  },
+  {
+    "id": "PIT_01_07518_01.tiff",
+    "report": "Lung, biopsy;\n  Adenocarcinoma "
+  },
+  {
+    "id": "PIT_01_07587_01.tiff",
+    "report": "Stomach, endoscopic biopsy;\n  Tubular adenoma with low grade dysplasia"
+  },
+  {
+    "id": "PIT_01_07759_01.tiff",
+    "report": "Colon, colonoscopic biopsy;\n  Adenocarcinoma, moderately differentiated"
+  },
+  {
+    "id": "PIT_01_07790_01.tiff",
+    "report": "Stomach, endoscopic biopsy;\n  Adenocarcinoma, moderately differentiated "
+  },
+  {
+    "id": "PIT_01_07828_01.tiff",
+    "report": "Stomach, endoscopic biopsy;\n  Adenocarcinoma, moderately differentiated "
+  },
+  {
+    "id": "PIT_01_08032_01.tiff",
+    "report": "Stomach, endoscopic biopsy;\n  Tubular adenoma with low grade dysplasia"
+  },
+  {
+    "id": "PIT_01_08109_01.tiff",
+    "report": "Stomach, endoscopic biopsy;\n  Tubular adenoma with low grade dysplasia"
+  },
+  {
+    "id": "PIT_01_08254_01.tiff",
+    "report": "Stomach, endoscopic biopsy;\n  Tubular adenoma with low grade dysplasia"
+  },
+  {
+    "id": "PIT_01_08423_01.tiff",
+    "report": "Colon, colonoscopic biopsy;\n  Adenocarcinoma, moderately differentiated"
+  },
+  {
+    "id": "PIT_01_08632_01.tiff",
+    "report": "Stomach, endoscopic biopsy;\n  Tubular adenoma with low grade dysplasia"
+  },
+  {
+    "id": "PIT_01_08659_01.tiff",
+    "report": "Stomach, endoscopic biopsy;\n  Tubular adenoma with low grade dysplasia"
+  },
+  {
+    "id": "PIT_01_08670_01.tiff",
+    "report": "Stomach, endoscopic biopsy;\n  Tubular adenoma with low grade dysplasia"
+  },
+  {
+    "id": "PIT_01_08715_01.tiff",
+    "report": "Stomach, endoscopic biopsy;\n  Adenocarcinoma, moderately differentiated "
+  },
+  {
+    "id": "PIT_01_08720_01.tiff",
+    "report": "Stomach, endoscopic biopsy;\n  Tubular adenoma with low grade dysplasia"
+  },
+  {
+    "id": "PIT_01_08791_01.tiff",
+    "report": "Stomach, endoscopic biopsy;\n  Adenocarcinoma, poorly differentiated with poorly cohesive carcinoma component"
+  },
+  {
+    "id": "PIT_01_09114_01.tiff",
+    "report": "Stomach, endoscopic biopsy;\n  Chronic gastritis\n   with interstinal metaplasia"
+  },
+  {
+    "id": "PIT_01_09148_01.tiff",
+    "report": "Lung, biopsy;\n  Small cell carcinoma"
+  },
+  {
+    "id": "PIT_01_09252_01.tiff",
+    "report": "Colon, colonoscopic biopsy;\n  Adenocarcinoma, moderately differentiated"
+  },
+  {
+    "id": "PIT_01_09285_01.tiff",
+    "report": "Stomach, endoscopic biopsy;\n  Tubular adenoma with low grade dysplasia"
+  },
+  {
+    "id": "PIT_01_09405_01.tiff",
+    "report": "Stomach, endoscopic biopsy;\n  Extranodal marginal zone B cell lymphoma of MALT type"
+  },
+  {
+    "id": "PIT_01_09423_01.tiff",
+    "report": "Stomach, endoscopic biopsy;\n  Tubular adenoma with low grade dysplasia"
+  },
+  {
+    "id": "PIT_01_09519_01.tiff",
+    "report": "Stomach, endoscopic biopsy;\n  Tubular adenoma with low grade dysplasia"
+  },
+  {
+    "id": "PIT_01_09584_01.tiff",
+    "report": "Stomach, endoscopic biopsy;\n  Tubular adenoma with low grade dysplasia"
+  },
+  {
+    "id": "PIT_01_09594_01.tiff",
+    "report": "Stomach, endoscopic biopsy;\n  Tubular adenoma with low grade dysplasia"
+  },
+  {
+    "id": "PIT_01_09963_03.tiff",
+    "report": "Urinary bladder, transurethral resection;\n  Invasive urothelial carcinoma,\n  with involvement of subepithelial connective tissue\n       \nNote) The specimen includes muscle proper."
+  },
+  {
+    "id": "PIT_01_10019_02.tiff",
+    "report": "Urinary bladder, transurethral resection;\n  Invasive urothelial carcinoma,\n  with involvement of subepithelial connective tissue\n       \nNote) The specimen includes muscle proper."
+  },
+  {
+    "id": "PIT_01_10067_03.tiff",
+    "report": "Urinary bladder, transurethral resection;\n  Invasive urothelial carcinoma,\n  with involvement of subepithelial connective tissue\n       \nNote) The specimen includes muscle proper."
+  },
+  {
+    "id": "PIT_01_10087_01.tiff",
+    "report": "Urinary bladder, transurethral resection;\n  Invasive urothelial carcinoma,\n  with involvement of subepithelial connective tissue\n       \nNote) The specimen includes muscle proper."
+  },
+  {
+    "id": "PIT_01_10177_01.tiff",
+    "report": "Urinary bladder, transurethral resection;\n  Invasive urothelial carcinoma, \n  with involvement of muscle proper\n\nNote) The specimen includes muscle proper."
+  },
+  {
+    "id": "PIT_01_10185_01.tiff",
+    "report": "Urinary bladder, transurethral resection;\n  Invasive urothelial carcinoma,\n  with involvement of subepithelial connective tissue\n       \nNote) The specimen includes muscle proper."
+  }
+]

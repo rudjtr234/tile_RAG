@@ -1,4 +1,3 @@
-
 import os
 import json
 from collections import Counter
@@ -8,16 +7,17 @@ from transformers import CLIPProcessor, CLIPModel
 from chromadb import PersistentClient
 
 # ✅ 기본 설정
-root_dir = "/home/mts/ssd_16tb/member/jks/tile_RAG_data/testphase2_dataset_v.0.1.1"
-db_path = "/home/mts/ssd_16tb/member/jks/tile_RAG_data/vectorDB/tile_RAG_embedding_db_v0.1.0"
+root_dir = "/home/mts/ssd_16tb/member/jks/tile_RAG_data/test_set_v0.1.0"
+db_path = "/home/mts/ssd_16tb/member/jks/tile_RAG_data/vectorDB/tile_RAG_embedding_db_v0.2.1"
 collection_name = "tile_embeddings"
 top_k = 1
-output_path = "predictions_v0.2.0.json"
+output_path = "predictions_v0.2.1.json"  # 출력 파일명 구분
 
-# ✅ 모델, DB 초기화
+# ✅ 모델, DB 초기화 (PLIP 사용)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-model = CLIPModel.from_pretrained("openai/clip-vit-base-patch16").to(device)
-processor = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch16")
+model = CLIPModel.from_pretrained("vinid/plip").to(device)
+processor = CLIPProcessor.from_pretrained("vinid/plip")
+
 client = PersistentClient(path=db_path)
 collection = client.get_or_create_collection(name=collection_name)
 
@@ -25,11 +25,19 @@ collection = client.get_or_create_collection(name=collection_name)
 results = []
 
 # ✅ 슬라이드 전체 처리
-slide_dirs = sorted([os.path.join(root_dir, d) for d in os.listdir(root_dir) if os.path.isdir(os.path.join(root_dir, d))])
+slide_dirs = sorted([
+    os.path.join(root_dir, d) 
+    for d in os.listdir(root_dir) 
+    if os.path.isdir(os.path.join(root_dir, d))
+])
 
 for slide_dir in slide_dirs:
     slide_id = os.path.basename(slide_dir)
-    tile_paths = sorted([os.path.join(slide_dir, f) for f in os.listdir(slide_dir) if f.endswith(".jpg")])
+    tile_paths = sorted([
+        os.path.join(slide_dir, f) 
+        for f in os.listdir(slide_dir) 
+        if f.endswith(".jpg")
+    ])
 
     if not tile_paths:
         print(f"⚠️ 타일 없음: {slide_id} → 스킵")
@@ -81,4 +89,3 @@ with open(output_path, "w", encoding="utf-8") as f:
     json.dump(results, f, ensure_ascii=False, indent=2)
 
 print(f"\n📁 전체 결과 JSON 저장 완료: {output_path}")
-
