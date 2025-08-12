@@ -15,7 +15,7 @@ model = CLIPModel.from_pretrained("vinid/plip").to(device)
 processor = CLIPProcessor.from_pretrained("vinid/plip")
 
 # ✅ ChromaDB 설정
-chroma_client = PersistentClient(path="/home/mts/ssd_16tb/member/jks/tile_RAG_data/vectorDB/tile_RAG_embedding_db_v0.2.1")
+chroma_client = PersistentClient(path="/home/mts/ssd_16tb/member/jks/tile_RAG_data/vectorDB/tile_RAG_embedding_db_v0.3.0")
 collection = chroma_client.get_or_create_collection(name="tile_embeddings_plip")
 
 # ✅ Groundtruth JSON 불러오기

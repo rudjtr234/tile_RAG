@@ -10,8 +10,8 @@ from chromadb import PersistentClient
 root_dir = "/home/mts/ssd_16tb/member/jks/tile_RAG_data/test_set_v0.1.0"
 db_path = "/home/mts/ssd_16tb/member/jks/tile_RAG_data/vectorDB/tile_RAG_embedding_db_v0.2.0"
 collection_name = "tile_embeddings"
-top_k = 1
-output_path = "predictions_v0.2.1.json"
+top_k = 3
+output_path = "predictions_v0.2.4.json"
 
 # ✅ 모델, DB 초기화
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -50,9 +50,15 @@ for slide_dir in slide_dirs:
                 include=["metadatas", "documents", "distances"]
             )
 
-            metadata = results_query["metadatas"][0][0]
-            caption = metadata.get("caption", "(없음)")
-            captions.append(caption)
+            # ✅ top-k 모두 투표 반영
+            metas_batch = results_query.get("metadatas", [[]])
+            if metas_batch and len(metas_batch[0]) > 0:
+                for m in metas_batch[0]:
+                    cap = (m or {}).get("caption", "(없음)")
+                    captions.append(cap)
+            else:
+                # 검색 결과가 없을 때 대비 (옵션)
+                captions.append("(없음)")
 
         except Exception as e:
             print(f"❌ 오류 발생: {path} → {e}")
@@ -61,7 +67,7 @@ for slide_dir in slide_dirs:
         print(f"⚠️ 캡션 없음: {slide_id}")
         continue
 
-    # 🔍 최빈 캡션 선택
+    # 🔍 최빈 캡션 선택 (top-k가 모두 반영된 상태)
     caption_counts = Counter(captions)
     most_common_caption, count = caption_counts.most_common(1)[0]
 
