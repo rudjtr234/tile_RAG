@@ -9,15 +9,15 @@ from chromadb import PersistentClient
 # ✅ 기본 설정
 # =========================
 root_dir = "/home/mts/ssd_16tb/member/jks/tile_RAG_data/test_set_v0.1.0"
-db_path  = "/home/mts/ssd_16tb/member/jks/tile_RAG_data/vectorDB/tile_RAG_embedding_db_v0.5.0"  # ← Optimus 임베딩이 들어있는 DB 권장
-collection_name = "tile_embeddings_HOPT0"  # ← Optimus 임베딩 컬렉션
+db_path  = "/home/mts/ssd_16tb/member/jks/tile_RAG_data/vectorDB/tile_RAG_embedding_db_v0.7.0"  # ← Optimus 임베딩이 들어있는 DB 권장
+collection_name = "tile_embeddings_HOPT1"  # ← H-optimus-1 임베딩 컬렉션
 
-top_k = 1                     # 3 또는 5 등으로 조절 (top-K 이웃)
+top_k = 1                    # 3 또는 5 등으로 조절 (top-K 이웃)
 vote_mode = "majority"        # "majority" or "weighted"
-output_path = "predictions_v0.5.0.json"
+output_path = "predictions_v0.7.0.json"
 
 # =========================
-# ✅ 모델, 전처리 (H-optimus-0 / timm)
+# ✅ 모델, 전처리 (H-optimus-1 / timm)
 # =========================
 import timm
 from timm.data import resolve_data_config
@@ -25,11 +25,11 @@ from timm.data.transforms_factory import create_transform
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-# H-optimus-0 로드 (추가 kwargs 없이 그대로)
-model = timm.create_model("hf-hub:bioptimus/H-optimus-0", pretrained=True).to(device)
+# H-optimus-1 로드
+model = timm.create_model("hf-hub:bioptimus/H-optimus-1", pretrained=True).to(device)
 model.eval()
 
-# 권장 전처리 구성
+# 권장 전처리 구성 (모델 카드 기준 자동 세팅)
 cfg = resolve_data_config({}, model=model)
 transform = create_transform(**cfg)
 
@@ -41,13 +41,26 @@ collection = client.get_or_create_collection(name=collection_name)
 # 컬렉션 metric이 'cosine'인지 확인(권장). Optimus 임베딩 차원과 일치해야 함.
 
 # =========================
-# ✅ 유틸: 임베딩 추출 (H-optimus-0)
+# ✅ 유틸: 임베딩 추출 (H-optimus-1)
+#   - timm ViT 계열 호환: forward_features → forward_head(pre_logits=True)
+#   - 일부 버전/설정에서 dict/tuple 반환 가능 → 안전 폴백 포함
 # =========================
 @torch.inference_mode()
 def image_embedding(pil_img: Image.Image):
     x = transform(pil_img).unsqueeze(0).to(device)   # (1, C, H, W)
-    feats = model.forward_features(x)                # (1, D, …) 또는 (1, D)
-    feats = model.forward_head(feats, pre_logits=True)  # (1, D)
+
+    try:
+        feats = model.forward_features(x)                # (1, D, …) 또는 (1, D)
+        feats = model.forward_head(feats, pre_logits=True)  # (1, D)
+    except Exception:
+        # 일부 timm 버전/구성에서 바로 임베딩이 반환되도록 정의되어 있을 수 있음
+        feats = model(x)
+        # (배치, D) 보장 위해 flatten
+        if isinstance(feats, (tuple, list)):
+            feats = feats[0]
+        if hasattr(feats, "logits"):
+            feats = feats.logits
+
     feats = torch.nn.functional.normalize(feats, dim=-1)
     return feats.squeeze(0).cpu().tolist()           # list[float]
 
@@ -70,7 +83,7 @@ for slide_dir in slide_dirs:
     ])
 
     if not tile_paths:
-        print(f"⚠️ 타일 없음: {slide_id} → 스킱")
+        print(f"⚠️ 타일 없음: {slide_id} → 스킵")
         continue
 
     # 투표 점수 누적(슬라이드 단위)

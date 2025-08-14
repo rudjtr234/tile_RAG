@@ -16,7 +16,7 @@ collection_name = "tile_embeddings_gigapath"
 
 top_k = 1
 vote_mode = "majority"        # "majority" or "weighted"
-output_path = "predictions_v0.6.0_gigapath.json"
+output_path = "predictions_v0.6.0.json"
 
 # =========================
 # ✅ 모델, 전처리 (GigaPath / timm)

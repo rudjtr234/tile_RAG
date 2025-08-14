@@ -23,7 +23,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 #    - 출력: (1, 1536)
 # ======================
 model = timm.create_model(
-    "hf-hub:bioptimus/H-optimus-0",
+    "hf-hub:bioptimus/H-optimus-1",
     pretrained=True,
     init_values=1e-5,
     dynamic_img_size=False,   # 권장: False

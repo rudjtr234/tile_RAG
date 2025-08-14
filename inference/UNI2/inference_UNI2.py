@@ -14,8 +14,8 @@ from timm.data.transforms_factory import create_transform
 root_dir = "/home/mts/ssd_16tb/member/jks/tile_RAG_data/test_set_v0.1.0"
 db_path = "/home/mts/ssd_16tb/member/jks/tile_RAG_data/vectorDB/tile_RAG_embedding_db_v0.4.0"  # ⚠️ UNI2 임베딩으로 재구축 필요
 collection_name = "tile_embeddings_UNI2"
-top_k = 1
-output_path = "predictions_v0.4.0.json"
+top_k = 3
+output_path = "predictions_v0.4.1.json"
 
 # ✅ 디바이스
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
