@@ -17,7 +17,7 @@
   },
   {
     "id": "PIT_01_00533_01.tiff",
-    "report": "Breast, core-needle biopsy;\n  1. Invasive carcinoma of no special type, grade II (Tubule formation: 3, Nuclear grade: 2, Mitoses: 1)\n  2. Ductal carcinoma in situ"
+    "report": "Breast, sono-guided core biopsy;\n  Invasive carcinoma of no special type, grade II (Tubule formation: 3, Nuclear grade: 2, Mitoses: 1)"
   },
   {
     "id": "PIT_01_00552_01.tiff",
@@ -57,7 +57,7 @@
   },
   {
     "id": "PIT_01_01184_01.tiff",
-    "report": "Breast, sono-guided core biopsy;\n  Invasive carcinoma of no special type, grade II (Tubule formation: 3, Nuclear grade: 2, Mitoses: 1)"
+    "report": "Breast, core-needle biopsy;\n  Fibrocystic change"
   },
   {
     "id": "PIT_01_01244_01.tiff",
@@ -77,7 +77,7 @@
   },
   {
     "id": "PIT_01_02172_01.tiff",
-    "report": "Breast, sono-guided core biopsy;\n  Ductal carcinoma in situ\n  - Type: Cribriform\n  - Nuclear grade: Low\n  - Necrosis: Absent"
+    "report": "Breast, sono-guided core biopsy;\n  Papillary neoplasm"
   },
   {
     "id": "PIT_01_02542_01.tiff",
@@ -189,7 +189,7 @@
   },
   {
     "id": "PIT_01_04544_01.tiff",
-    "report": "Breast, core-needle biopsy;\n  1. Fibroepithelial tumor\n  2. Usual ductal hyperplasia"
+    "report": "Colon, colonoscopic biopsy;\n  Tubular adenoma with low grade dysplasia"
   },
   {
     "id": "PIT_01_04853_01.tiff",
@@ -225,7 +225,7 @@
   },
   {
     "id": "PIT_01_05999_01.tiff",
-    "report": "Prostate, biopsy;\n  Acinar adenocarcinoma, Gleason's score 6 (3+3), grade group 1, tumor volume: 100%"
+    "report": "Prostate, biopsy;\n  Acinar adenocarcinoma, Gleason's score 6 (3+3), grade group 1, tumor volume: 90%"
   },
   {
     "id": "PIT_01_06134_01.tiff",
@@ -253,15 +253,15 @@
   },
   {
     "id": "PIT_01_07705_01.tiff",
-    "report": "Stomach, endoscopic biopsy;\n  Adenocarcinoma, moderately differentiated "
+    "report": "Stomach, endoscopic biopsy;\n  Tubular adenoma with low grade dysplasia"
   },
   {
     "id": "PIT_01_07770_01.tiff",
-    "report": "Stomach, endoscopic biopsy;\n  Adenocarcinoma, poorly differentiated "
+    "report": "Stomach, endoscopic biopsy;\n  Adenocarcinoma, moderately differentiated "
   },
   {
     "id": "PIT_01_07798_01.tiff",
-    "report": "Lung, biopsy;\n  Squamous cell carcinoma  "
+    "report": "Stomach, endoscopic biopsy;\n  Adenocarcinoma, moderately differentiated "
   },
   {
     "id": "PIT_01_07814_01.tiff",
@@ -341,7 +341,7 @@
   },
   {
     "id": "PIT_01_10247_01.tiff",
-    "report": "Urinary bladder, transurethral resection;\n  Non-invasive papillary urothelial carcinoma, high grade\n\nNote) The specimen includes muscle proper."
+    "report": "Urinary bladder, transurethral resection;\n  Urothelial carcinoma in situ\n\nNote) The specimen includes muscle proper."
   },
   {
     "id": "PIT_01_10284_01.tiff",
@@ -393,7 +393,7 @@
   },
   {
     "id": "PIT_03_01172_01.tiff",
-    "report": "Lung, biopsy;\n  Non-small cell carcinoma, favor adenocarcinoma"
+    "report": "Lung, biopsy;\n  Adenocarcinoma"
   },
   {
     "id": "PIT_04_00500_01.tiff",

@@ -13,13 +13,13 @@ from timm.data.transforms_factory import create_transform
 # =========================
 # ✅ 기본 설정
 # =========================
-root_dir = "/home/mts/ssd_16tb/member/jks/tile_RAG_data/test_set_v0.1.0"
-db_path  = "/home/mts/ssd_16tb/member/jks/tile_RAG_data/vectorDB/tile_RAG_embedding_db_v0.4.0"  # UNI2 임베딩 DB
-collection_name = "tile_embeddings_UNI2"
+root_dir = "/home/mts/ssd_16tb/member/jks/tile_RAG_data/testphase2_dataset_v.0.1.1"
+db_path  = "/home/mts/ssd_16tb/member/jks/tile_RAG_data/vectorDB/tile_RAG_embedding_db_v0.4.1"  # UNI2 임베딩 DB
+collection_name = "tile_embeddings_final_UNI2"
 
 top_k = 10                    # ← 이웃 개수 (바로 반영)
 vote_mode = "weighted"       # "majority" 또는 "weighted"
-output_path = "predictions_v0.4.6.json"
+output_path = "predictions_final_majority_v0.1.2.json"
 
 # weighted 모드 세부 옵션
 USE_SOFTMAX = True           # softmax로 정규화
@@ -185,3 +185,9 @@ with open(output_path, "w", encoding="utf-8") as f:
     json.dump(results, f, ensure_ascii=False, indent=2)
 
 print(f"\n📁 전체 결과 JSON 저장 완료: {output_path}")
+
+
+
+
+
+

@@ -2,7 +2,7 @@ import json
 from eval import REG_Evaluator
 
 GT_PATH = '/home/mts/ssd_16tb/member/jks/reg2025_tile_RAG/evaluation/reg/metric/json/train.json'
-PRED_PATH = '/home/mts/ssd_16tb/member/jks/reg2025_tile_RAG/evaluation/reg/metric/json/predictions_v0.9.2.json'
+PRED_PATH = '/home/mts/ssd_16tb/member/jks/reg2025_tile_RAG/evaluation/reg/metric/json/predictions_v0.4.6.json'
 
 EMBEDDING_MODEL = 'dmis-lab/biobert-v1.1'
 SPACY_MODEL = 'en_core_sci_lg'
