@@ -8,14 +8,14 @@
 
 ## 📁 알고리즘 구조
 
-![Alt text](tile_RAG.png)
+![Alt text](image/tile_RAG.png)
 
 
 ---
 
 ## 📁 프로젝트 구조
 
-![Alt text](project.png)
+![Alt text](image/project.png)
 
 ---
 
@@ -112,6 +112,6 @@
 ## 대회 성능 결과 (Testphase2, 2025-08-21)
 
 
-![Alt text](reg2025_phase2.png)
+![Alt text](image/reg2025_phase2.png)
 
 
