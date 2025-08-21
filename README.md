@@ -22,7 +22,7 @@
 
 ### 1️⃣ 타일 임베딩 (embed/)
 
-embed_UNI2.py
+- embed_UNI2.py
 
  모델: MahmoodLab UNI v2-h (ViT 계열 대규모 병리 기반 FDN).
 
@@ -30,7 +30,7 @@ embed_UNI2.py
 
  권장 용도: 기본 베이스라인, 타일-KNN/RAG 1순위.
 
-embed_gigapath.py
+- embed_gigapath.py
 
  모델: GigaPath 기반 병리 특화 비전 인코더.
 
@@ -38,7 +38,7 @@ embed_gigapath.py
 
  권장 용도: UNI2와 Late-fusion 조합, 조직 유형 다양할 때 보완재.
 
-embed_h_optimus_0.py
+- embed_h_optimus_0.py
 
  모델: H-Optimus-0 (병리 도메인 최적화 변형 ①).
 
@@ -46,7 +46,7 @@ embed_h_optimus_0.py
 
  권장 용도: 리소스 제약 환경, 다모델 앙상블의 경량 파트.
 
-embed_h_optimus_1.py
+- embed_h_optimus_1.py
 
  모델: H-Optimus-1 (병리 도메인 최적화 변형 ②).
 
@@ -54,7 +54,7 @@ embed_h_optimus_1.py
 
  권장 용도: 0번과 함께 쌍으로 비교/앙상블 시 안정성 확보.
 
-embed_plip.py
+- embed_plip.py
 
  모델: PLIP (Pathology-Language Image Pretraining), CLIP 구조 병리 특화.
 
@@ -62,7 +62,7 @@ embed_plip.py
 
  권장 용도: 텍스트 유사도 기반 RAG, 보고서 문장 스코어링 보조.
 
-embed_virchow2.py
+- embed_virchow2.py
 
  모델: Virchow2 패치 임베딩 (병리 특화 FDN).
 
