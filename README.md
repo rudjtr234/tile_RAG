@@ -112,8 +112,9 @@
 ## 📊 대회 성능 결과 (Testphase2, 2025-08-21)
 
 
--1000장 규모 pathology report 기준(testphase2) 0.6793점 달성
 
 ![Alt text](image/reg2025_phase2.png)
 
+
+- 1000장 규모 pathology report 기준(testphase2) 0.6793점 달성
 
