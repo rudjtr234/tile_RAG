@@ -15,6 +15,7 @@
 
 ## 📁 프로젝트 구조
 
+![Alt text](project.png)
 
 ---
 
