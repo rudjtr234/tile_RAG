@@ -120,3 +120,7 @@
 
 - 1000장 규모 pathology report 기준(testphase2) 0.6793점 달성
 
+
+![Alt text](image/result.png)
+
+- final result : 0.7276 (REG_2025 12th)
